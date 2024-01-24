@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html {
+
+    width: 1920px;
+    height: 1080px;
+}
+
+body {
+
+    font-family: 'Poppins';
+    margin: 0%;
+
+}
+
+.containerTitle {
+    position: relative;
+    align-items: center;
+    margin-left: 172px;
+}
+
+.containerTitle h1{
+    margin-top: 360px;
+    font-weight: lighter;
+    position:absolute;
+    width: 1137px;
+    height: 150px;
+    display: flex;
+    font-size: 115px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #F2B2CA;
+    border-radius: 20px;
+    background: rgba(242, 178, 202, 0.2);
+    backdrop-filter: blur(5px);
+}
+.containerTitle h2{
+    position:absolute;
+    margin-top: 535px;
+    display: flex;
+    width: 1137px;
+    height: 130px;
+    flex-direction: column;
+    justify-content: center;
+    color: #515151;
+    font-size: 53px;
+    font-weight: 100;
+    line-height: 120%; 
+}
+
+.containerMenu{
+    position: absolute;
+    margin-top: 350px;
+    width: 70px;
+    height: 375px;
+    border-radius: 0px 30px 30px 0px;
+    background: #F2B2CA;
+    box-shadow: 8px 5px 13.4px 0px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(31px);
+}
+
+.containerImg1 {
+    position: absolute;
+    background: url('Logo_entier.png');
+    background-repeat: no-repeat;
+    margin-left: 1443px;
+    margin-right: 64px;
+    margin-top: 206px;
+    width: 413px;
+    height: 674px;
+}
+
+.containerImg2 {
+    width: 500px;
+    height: 500px;
+}
