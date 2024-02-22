@@ -9,42 +9,56 @@
 body {
     font-family: 'Poppins';
     margin: 0;
-    background-image: url('Su\ ra\ ya.png');
-    
+    background-image: url('Su ra ya.png');
+    animation: scrollBackground 60s linear infinite;
+}
+
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
 }
 
 .imgS{
-    position: relative;
+    position: absolute;
     margin-left: 0;
     width: 60px;
     margin-top: 10px;
+    margin-left: 10px;
     height: 60px;
 }
 
 .containerTitle {
-    position: absolute;
     align-items: left;
-    margin-left: 172px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    top: 50%;
-    transform: translateY(-50%); 
+    margin-left: 100px;
+    height: 310px;
 }
 
-.containerTitle h1{
-    font-weight: lighter;
-    width: fit-content;
+.containerTitle p{
     margin: 0;
-    padding: 0 18px;
-    display: flex;
-    font-size: 95px;
-    justify-content: center;
-    text-align: center;
+    padding: 0 20px;
+    font-size: 100px;
     color: #F2B2CA;
-    border-radius: 20px;
+    border-radius: 25px;
     background: rgba(242, 178, 202, 0.2);
     backdrop-filter: blur(5px);
+}
+
+.bodyContainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .blackText {
@@ -52,32 +66,35 @@ body {
 }
 
 .containerTitle h2{
-    display: flex;
-    width: fit-content;
     margin-bottom: 0;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 25px;
     color: #515151;
     font-size: 40px;
     font-weight: 100;
     line-height: 120%; 
 }
 
-.containerMenu{
+.containerMenu {
+    width: 60px;
+    height: 310px;  
+    flex-shrink: 0; 
+}
+
+.Menu{
     position: fixed;
     width: 60px;
     height: 310px;
-    top: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(-50%); 
     border-radius: 0px 30px 30px 0px;
     background: #F2B2CA;
     box-shadow: 8px 5px 13.4px 0px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(31px);
     z-index: 9999;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .home img{
@@ -101,15 +118,12 @@ body {
 }
 
 .containerImg1 {
-    position: absolute;
-    top: 50%;
-    margin-left: 1300px;
-    transform: translateY(-50%); 
+    flex-grow: 1;
+    text-align: center;
 }
 
-.containerImg1 img{
-    width: 350px;
-    height: 550px;
+.containerImg1 img {
+    width: 400px;
 }
 
 .zoneText {
@@ -128,7 +142,6 @@ body {
 }
 
 .zoneText p{
-    position: relative;
     font-size: 20px;
     line-height: 35px;
     padding: 30px 100px;
